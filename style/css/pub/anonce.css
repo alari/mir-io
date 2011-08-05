@@ -1,0 +1,28 @@
+.pub-anonce
+{
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #9c611c;
+	background: #fffdf7;
+	text-indent: 2em;
+	margin-bottom: 5px;
+}
+.pub-anonce-important
+{
+	border-color: #f86b00;
+	background-color: #ffeee1;
+}
+.pub-anonce:hover
+{
+	background: #fdf7e6;
+	border-color: #552d00;
+}
+.pub-anonce-sub
+{
+	font-size: 90%;
+	color: #985f1b;
+}
+.pub-anonce-sub a
+{
+	color: #804601 !important;
+}

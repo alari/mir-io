@@ -1,0 +1,55 @@
+html, body, table, tr, td
+{
+	margin:0;
+	padding:0;
+	width: 100%;
+	height: 100%;
+}
+*
+{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+#main
+{
+	width: 450px;
+	border: 1px solid #552d00;
+	left: 50%;
+	margin-left: -225px;
+	position: relative;
+	background-color: #fff8e1;
+}
+#main a
+{
+	color: black;
+}
+#title
+{
+	font-family: Arial;
+	font-weight: bold;
+	background-color: #e6b76d;
+	padding: 2px;
+	text-align: center;
+}
+#msg
+{
+	padding: 10px;
+	font-family: Calibri, Serif;
+}
+#sub
+{
+	padding-top: 10px;
+	padding-bottom: 6px;
+	text-align: center;
+}
+#sub a
+{
+	font-style: italic;
+	font-family: "Times New Roman";
+	color: #934b02;
+}
+a:hover
+{
+	text-decoration: none;
+	color: black;
+}

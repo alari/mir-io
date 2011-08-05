@@ -1,0 +1,79 @@
+.pub-meta
+{
+	margin-top: 2px;
+	border: 1px solid #aa560b;
+	background-color: #fff7ee;
+}
+.pub-meta-cap
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2px;
+}
+.pub-meta-cap a
+{
+	font-weight: bold;
+}
+.pub-meta-radio
+{
+	float: left;
+	background-color: #aa560b;
+	padding-right: 1px;
+	padding-bottom: 1px;
+}
+.pub-meta-disc
+{
+	text-align: right;
+	font-style: italic;
+	padding-right: 2em;
+}
+
+.pub-comm
+{
+	margin-top: 2px;
+	border: 1px solid #09bf00;
+	background-color: #dfffde;
+}
+.pub-comm-cap
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2px;
+}
+.pub-comm-cap a
+{
+	font-weight: bold;
+}
+.pub-comm-box
+{
+	float: left;
+	background-color: #09bf00;
+	padding-right: 1px;
+	padding-bottom: 1px;
+}
+
+.pub-comm-categs, .pub-comm-members
+{
+	text-align: right;
+	padding-right: 1em;
+}
+
+
+
+.pub-other, .pub-cycle, .pub-sec
+{
+	margin-top: 2px;
+	border: 1px solid #3f89f7;
+	background-color: #e2eeff;
+	text-align: center;
+	padding: 2px 0;
+}
+
+#ed_sbm, #ed_rst
+{
+	margin-top: 10px;
+	border: 1px solid black;
+	background: white;
+}

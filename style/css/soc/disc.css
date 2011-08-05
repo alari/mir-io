@@ -1,0 +1,50 @@
+.soc-discs
+{
+	width: 50%;
+	border: 1px solid #b5703d;
+	background-color: #f8fffa;
+	padding: 0;
+	padding-bottom: 7px;
+	vertical-align: top;
+}
+.soc-discs span
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-weight: 200;
+	border: 1px solid #b5703d;
+	border-bottom-width: 2px;
+}
+.soc-key
+{
+	border-color: #b5703d;
+	background-color: #fff9ec;
+}
+.soc-key span
+{
+	font-size: 120%;
+	background-color: #dff0ff;
+	border: 1px solid #008000;
+}
+.soc-key a
+{
+	text-decoration: none;
+	border-bottom: 1px solid #2d98ac;
+	color: #3b1801 !important;
+	font-size: 110%;
+}
+.soc-key span a
+{
+	border: 0;
+}
+.soc-key a:hover
+{
+	border: 0;
+}
+.soc-table
+{
+	border-collapse: no;
+	border-spacing: 6px;
+	width: 100%;
+}

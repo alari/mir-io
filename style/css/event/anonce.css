@@ -1,0 +1,14 @@
+.event-anonce
+{
+	width: 50%;
+	padding: 12px;
+	border: 1px solid #9c611c;
+	background: #fffdf7;
+	text-align: center;
+}
+.events-table
+{
+	width: 100%;
+	border-collapse: no;
+	border-spacing: 6px;
+}

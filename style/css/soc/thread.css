@@ -1,0 +1,21 @@
+.thread-last
+{
+	float: right;
+	display: block;
+	width: 30%;
+	border: 1px solid #baa069;
+	text-align: center;
+	background-color: #faf9e5;
+}
+.thread
+{
+	border: 1px solid #74c2ef;
+	display: block;
+	margin-bottom: 4px;
+	padding-left: 2em;
+	background-color: #f8fffa;
+}
+.thread small
+{
+	padding-left: 1em;
+}

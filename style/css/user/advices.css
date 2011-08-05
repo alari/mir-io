@@ -1,0 +1,17 @@
+.advice
+{
+	background-color: #f4fff7;
+	border: 1px solid #28ad3a;
+	margin-bottom: 2px;
+}
+.adv-cap
+{
+	background-color: #f6f0ca;
+	border-bottom: 1px solid #9c611c;
+	display: block;
+	text-align: center;
+}
+.adv-cap a
+{
+	font-weight: 200;
+}

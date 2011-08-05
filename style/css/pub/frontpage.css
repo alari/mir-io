@@ -1,0 +1,36 @@
+table.libro-front
+{
+	margin-bottom: 15px;
+	width: 100%;
+}
+table.libro-front caption
+{
+	background: #fff;
+	padding: 6px;
+}
+table.libro-front caption h2
+{
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+table.libro-front caption h3
+{
+	display: inline;
+	font-size: 7pt !important;
+	margin-left: 1em !important;
+}
+table.libro-front td
+{
+	background: #f4fff7;
+	border: 1px solid #ebad6c;
+	padding: 4px 1px;
+}
+table.libro-front th
+{
+	background: #f2dda4;
+}
+table.libro-front th a
+{
+	color: #000 !important;
+}

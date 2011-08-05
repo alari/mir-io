@@ -1,0 +1,37 @@
+div.pub-main
+{
+	margin-bottom: 30px;
+}
+.epygraph, .epygraph *
+{
+	text-align: right !important;
+}
+p.postscriptum
+{
+	padding: 8px;
+}
+span.postscriptum
+{
+	display: block;
+	font-weight: bold;
+	padding: 0;
+}
+p.pub-author
+{
+	text-align: right;
+	margin: 8px 3em;
+	font-family: Verdana;
+	font-weight: bold;
+	font-style: italic;
+}
+p.pub-written
+{
+	text-align: right;
+	padding: 2px;
+	margin-bottom: 8px;
+}
+p.pub-written span
+{
+	display: block;
+	font-style: italic;
+}

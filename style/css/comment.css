@@ -1,0 +1,195 @@
+.comment
+{
+	clear: both;
+	margin-bottom: 4px;
+	border: 2px solid white;
+}
+.comment-fl
+{
+	border-bottom: 2px solid #4587d8;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	padding-right: 7px;
+	white-space: nowrap;
+	text-align: right;
+}
+.comment-fl span
+{
+	width: 125px;
+	text-align: center;
+	float: left;
+	border-right: 2px solid #4587d8;
+	background-color: #cbf0ff;
+}
+.comment-fl span:hover
+{
+	background-color: #fff;
+}
+.comment-fl span a
+{
+	text-decoration: none;
+	color: #000 !important;
+}
+.comment-fl span a:hover
+{
+	text-decoration: underline !important;
+}
+.comment-ml .comment-ava
+{
+	margin-left: -130px;
+	width: 125px;
+	float: left;
+	text-align: center;
+	background-color: #e5faea;
+	clear: left;
+	padding: 3px;
+	margin-bottom: 20px;
+	font-size: 12px;
+	border-left: 1px solid black;
+}
+.comment-ml
+{
+	padding-left:130px;
+	padding-right: 5px;
+	padding-bottom: 7px;
+	background-color: white;
+}
+.comment-ml .comment-parent
+{
+	padding: 12px;
+}
+.comment-ml .comment-content
+{
+	text-align: left;
+}
+.signature
+{
+	margin-top: 12px;
+	border-top: 1px solid black;
+	margin-left: 10 px;
+	margin-right: 10px;
+	padding: 5px;
+	font-family: Verdana;
+	font-size: 11px;
+}
+.comment-ll
+{
+	clear: both;
+	background: #fbfbfa;
+	text-align: right;
+	padding: 1px;
+	padding-right: 7px;
+	border: 1px solid #009804;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 2px solid #009804;
+}
+.comment-ll a
+{
+	text-decoration: none;
+	color: #452400 !important;
+	margin-left: 1em;
+}
+.comment-ll a:hover
+{
+	color: #210 !important;
+	text-decoration: underline !important;
+}
+
+/**
+ * СКРЫТОЕ
+ */
+.comment-hidden
+{
+	border: 2px solid #e4e4e4;
+}
+.comment-hidden .comment-fl
+{
+	border-bottom-color: #c4d0df;
+	border-top-color: #979696;
+	border-left-color: #979696;
+}
+.comment-hidden .comment-fl span
+{
+	border-right-color: #c4d0df;
+	background-color: #ecf4f7;
+}
+.comment-hidden .comment-ml .comment-ava
+{
+	background-color: #ebf4ed;
+	border-left-color: #979696;
+}
+.comment-hidden .comment-ml img
+{
+	opacity: .6;
+	filter: alpha(opacity=60);
+}
+.comment-hidden .comment-ml
+{
+	background-color: #f6f8fe;
+	color: #bcc2ca;
+}
+.comment-hidden .comment-ll
+{
+	background: #edf6ee;
+	border-color: #70b471;
+	border-right-color: #979696;
+	border-bottom-color: #979696;
+}
+
+
+/**
+ * ДОБАВЛЕНИЕ КОММЕНТА
+ */
+.comment-add
+{
+	border: 1px solid #c37835;
+	padding: 14px;
+	text-align: center;
+	background-color: #fffef9;
+}
+.comment-add a
+{
+	text-decoration: none;
+	border-bottom: 1px solid #3044ff;
+}
+.comment-add a:hover
+{
+	border: 0;
+}
+.comment-add textarea
+{
+	margin: 10px;
+	width: 40em;
+	height: 240px;
+}
+#ctextmarkup
+{
+	margin: 3px;
+	border: 1px solid silver;
+	padding: 3px;
+	font-size: small;
+}
+#ctextmarkup a
+{
+	border: 0;
+}
+.comment-reminder
+{
+	margin: 3px;
+	font-size: x-small;
+}
+.comment-submit
+{
+	padding-top: 14px;
+}
+
+/**
+ * РЕЦЕНЗИИ
+ */
+.comment-rec
+{
+	padding: 5px;
+	border: 1px solid #e5faea;
+	margin: 0;
+}

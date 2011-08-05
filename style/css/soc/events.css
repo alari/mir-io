@@ -1,0 +1,21 @@
+.soc-events
+{
+	width: 50%;
+	border: 1px solid lightgreen;
+	padding: 0;
+	padding-bottom: 7px;
+	vertical-align: top;
+}
+.soc-events span
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-weight: 200;
+	border: 1px solid lightgreen;
+	border-bottom-width: 2px;
+}
+.soc-events li
+{
+	padding-right: 2em;
+}

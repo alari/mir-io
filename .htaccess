@@ -1,0 +1,76 @@
+php_value include_path ./src
+php_value auto_prepend_file mr.phps
+php_value max_execution_time 300
+php_value error_reporting E_ALL
+php_value iconv.internal_encoding utf-8
+php_value date.timezone Europe/Moscow
+php_value register_globals Off
+php_value magic_quotes_gpc Off
+php_value register_long_arrays Off
+
+
+# supress php errors
+#php_flag display_startup_errors off
+#php_flag display_errors off
+#php_flag html_errors off
+#php_value docref_root 0
+#php_value docref_ext 0
+
+# enable PHP error logging
+#php_flag  log_errors on
+#php_value error_log /var/www/litclub/data/www/mir.io/logs/php_errors.log
+
+# prevent access to PHP error log
+<Files PHP_errors.log>
+ Order allow,deny
+ Deny from all
+ Satisfy All
+</Files>
+
+<Files ~ "\.ini$">
+ Deny from all
+</Files>
+
+<Files ~ "\.phps$">
+# Deny from all
+</Files>
+
+# ErrorDocument 401 /ErrorPageException.code-401.xml
+# ErrorDocument 403 /ErrorPageException.code-403.xml
+# ErrorDocument 404 /ErrorPageException.code-404.xml
+# ErrorDocument 500 /ErrorPageException.code-500.xml
+
+AddType application/x-httpd-php-source .phps
+AddType application/x-httpd-php .php5
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+Options +FollowSymlinks
+RewriteRule ^libro/read\.text-([0-9]+)\.xml$ http://lito.mir.io/$1.xml [L,R=301]
+RewriteRule ^libro/section\.id-([0-9]+)\.xml$ http://lito.mir.io/$1.ml [L,R=301]
+RewriteRule ^libro/sections\.xml$ http://lito.mir.io/secs.xml [L,R=301]
+
+RewriteRule ^users/([a-z0-9_-]+/(profile|prose|stihi|pubs|article)(/.+)?)$ http://mir.io/~$1 [L,R=301]
+RewriteRule ^(users|\~)/([a-z0-9_-]+)/blog/?$ http://mir.io/~$2/ [L,R=301]
+RewriteRule ^(users|\~)/([a-z0-9_-]+)/blog/msg/([0-9]+)$ http://mir.io/~$2/$3.ml [L,R=301]
+
+RewriteRule ^comm/([a-z0-9_-]+/)event/(.+)\.xml$ http://mir.io/-$1$2.ml [L,R=301]
+RewriteRule ^comm/([a-z0-9_-]+/)sec/(.+)\.xml$ http://mir.io/-$1-$2.ml [L,R=301]
+RewriteRule ^comm/([a-z0-9_-]+/)pubs(\.categ(-[0-9]+))?\.xml$ http://mir.io/-$1pubs$3.xml [L,R=301]
+
+RewriteRule ^society/thread\.id-([0-9]+)(\.page-([0-9]+))?\.xml$ http://mir.io/x/redirect?disc/thread/$1/$3 [L,R=301]
+RewriteRule ^society/disc\.id-([0-9]+)(\.page-([0-9]+))?\.xml$ http://mir.io/x/redirect?disc/chapter/$1/$3 [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^/\~.+ [OR]
+RewriteCond %{REQUEST_URI} .+\.x?ml$ [OR]
+RewriteCond %{REQUEST_URI} ^.*/$ [OR]
+RewriteCond %{REQUEST_URI} ^/[_a-z]+$ [OR]
+RewriteCond %{REQUEST_URI} ^/(%[a-z0-9][a-z0-9])+
+RewriteRule ^.*$ handler.xml.php5 [L]
+
+RewriteCond %{REQUEST_URI} .+\.xs$
+RewriteRule ^.*$ handler.xscript.php5 [L]
+
+RewriteCond %{REQUEST_URI} ^/x/.+
+RewriteRule ^.*$ handler.xmod.php5 [L]
